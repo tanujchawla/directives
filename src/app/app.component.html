@@ -13,7 +13,8 @@
         </li>
       </ul>
       <p appBasicHighlight>Style me with basic highlight.</p>
-      <p appBetterHighlight>Style me with better highlight.</p>
+      <p [appBetterHighlight]="'green'" defColor="red">Style me with better highlight.</p>
+      <p *appUnless="onlyOdd"> Basic Structural Directive</p>
     </div>
   </div>
 </div>
